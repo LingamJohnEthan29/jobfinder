@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./styles.css" rel = "stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .left-card, .right-card {
+            width: 30%; /* Thin cards */
+            display: flex;
+            flex-direction: column;
+        }
+        .middle-card {
+            width: 60%; /* Bigger middle card */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">JobQuest</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="./jobs.html">Jobs</a>
+            <a class="nav-item nav-link" href="./companies.html">Companies</a>
+            <a class="nav-item nav-link" href="#" >Services</a>
+            <a class="nav-item nav-link" href="./signup.html"  style="margin-left: 20px;"><button type="button" class="btn btn-outline-info">Sign Up</button></a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="card left-card">
+            <div>
+                <b><h4>Guest</h4></b>
+            </div>
+            <div style="border-bottom: solid grey 0.5px;">
+                Guest's place of education
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: left
+            ;border-bottom: thin solid grey;">
+                <button class="btn btn-light"> About me</button>
+                <button class="btn btn-light">Job preferences</button>
+                <button class="btn btn-light">Company follows</button>
+                <button class="btn btn-light">Contributions</button>
+                <button class="btn btn-light">Account Setting</button>
+                <button class="btn btn-light">Notifications</button>
+            </div>
+            <div style="justify-content: center;display: flex;margin-top: 10px;">
+                <button type= "button" class="btn btn-large btn-outline-info">Help Centre</button>
+            </div>
+        </div>
+        <div class="middle-card">
+            <div style="border-bottom: thin grey solid;">
+                <h1><b>About Me</b></h1>
+            </div>
+            <div>
+                <h5><b>My Information</b></h5>
+                Get the best job matches<br>
+                Make your Community posts as relevant as possible
+                <h6 style="font-size: smaller;">Employment Status*</h6>
+                Student
+                <h6 style="font-size: smaller;">Full Name*</h6>
+                Guest Doe
+                <h6 style="font-size: smaller;">Location*</h6>
+                ABC
+                <h6 style="font-size: smaller;">University*</h6>
+                Lorem 
+                <h6 style="font-size: smaller;">Degree Type*</h6>
+                Lorem 
+            </div>
+            <div style="border-top: thin solid grey;">
+                <h4><b>CV</b></h4>
+                <label>
+                    Upload your CV
+                </label>
+                <input type="file">
+            </div>        
+        </div>
+            <div class="card right-card">
+                <h3>Bowls for you</h3>
+                <a href="#" class="explore">Explore all bowls →</a>
+    
+                <div class="bowl">
+                    <img src="https://via.placeholder.com/40" alt="Bowl Icon">
+                    <div class="bowl-info">
+                        <strong>Banking operations - India</strong>
+                        <p>7K members</p>
+                        <div class="btns">
+                            <button>View</button>
+                            <button>Follow</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bowl">
+                    <img src="https://via.placeholder.com/40" alt="Bowl Icon">
+                    <div class="bowl-info">
+                        <strong>Cybersecurity & Tech Consulting</strong>
+                        <p>5K members</p>
+                        <div class="btns">
+                            <button>View</button>
+                            <button>Follow</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bowl">
+                    <img src="https://via.placeholder.com/40" alt="Bowl Icon">
+                    <div class="bowl-info">
+                        <strong>Consulting to Product Management</strong>
+                        <p>7K members</p>
+                        <div class="btns">
+                            <button>View</button>
+                            <button>Follow</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
